@@ -15,6 +15,14 @@
 }
 /*** Spinner End ***/
 
+.h-dvh{
+    height: 100dvh;
+}
+
+.fs-1 {
+    font-size: 80px;
+}
+
 .back-to-top {
     position: fixed;
     right: 30px;
