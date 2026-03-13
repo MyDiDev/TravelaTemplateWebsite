@@ -45,14 +45,18 @@
                     <div class="col-lg-6">
                         <div class="row g-4">
                             <% for (let i = 0; i <= 3; i++) { %>
-                                <%- include("components/serviceCard", {title: services[i]?.title, description: services[i]?.description, icon: services[i]?.icon }) %>       
+                                <div class="col-12">
+                                    <%- include("components/serviceCard", {title: services[i]?.title, description: services[i]?.description, icon: services[i]?.icon }) %>       
+                                </div>
                             <% } %> 
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-4">
                             <% for (let i = 4; i < services.length; i++) { %>
-                                <%- include("components/serviceCard", {title: services[i]?.title, description: services[i]?.description, icon: services[i]?.icon }) %>    
+                                <div class="col-12">
+                                    <%- include("components/serviceCard", {title: services[i]?.title, description: services[i]?.description, icon: services[i]?.icon }) %>       
+                                </div>  
                             <% } %> 
                         </div>
                     </div>
