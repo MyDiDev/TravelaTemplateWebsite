@@ -122,7 +122,7 @@ const blogItems = [
 ];
 
 app.get("/", (req, res) => {
-  res.render("index", { carouselItems: carouselItems, services: servicesItems, blogs: blogItems });
+  res.render("index", { carouselItems: carouselItems, services: servicesItems, blogs: blogItems, categoryItems: categoriesListItems });
 });
 
 app.get("/about", (req, res) => {
